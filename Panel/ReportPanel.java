@@ -1,9 +1,9 @@
-package Exam5.Panel;
+package Panel;
 
 import javax.swing.*;
 
-import Exam5.Inventory.Inventory;
-import Exam5.Product.Product;
+import Inventory.Inventory;
+import Product.Product;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;

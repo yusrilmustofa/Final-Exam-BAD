@@ -1,8 +1,8 @@
-package Exam5.Product;
+package Product;
 
 import javax.swing.*;
 
-import Exam5.Inventory.Inventory;
+import Inventory.Inventory;
 
 import java.awt.*;
 

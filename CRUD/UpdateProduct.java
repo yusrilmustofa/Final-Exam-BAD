@@ -1,14 +1,14 @@
-package Exam5.CRUD;
+package CRUD;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JOptionPane;
 
-import Exam5.Inventory.Inventory;
-import Exam5.Panel.ProductPanel;
-import Exam5.Product.Product;
-import Exam5.Product.ProductList;
+import Inventory.Inventory;
+import Panel.ProductPanel;
+import Product.Product;
+import Product.ProductList;
 
 public class UpdateProduct implements ActionListener {
     private ProductPanel productPanel;
@@ -29,6 +29,7 @@ public class UpdateProduct implements ActionListener {
             double price = productPanel.getPriceField();
             int stock = productPanel.getStockField();
 
+            // Perbarui produk yang ada dengan data baru
             Product updatedProduct = new Product(name, desc, price, stock);
             inventoryManager.updateProduct(selectedIndex, updatedProduct); 
             productListPanel.updateProduct(selectedIndex, updatedProduct);

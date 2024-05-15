@@ -1,9 +1,9 @@
-package Exam5.Inventory;
+package Inventory;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import Exam5.Product.Product;
+import Product.Product;
 
 public class Inventory {
     private List<Product> products;

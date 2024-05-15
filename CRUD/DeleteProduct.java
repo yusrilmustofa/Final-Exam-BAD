@@ -1,13 +1,13 @@
-package Exam5.CRUD;
+package CRUD;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JOptionPane;
 
-import Exam5.Inventory.Inventory;
-import Exam5.Panel.ProductPanel;
-import Exam5.Product.ProductList;
+import Inventory.Inventory;
+import Panel.ProductPanel;
+import Product.ProductList;
 
 public class DeleteProduct implements ActionListener {
     private ProductPanel productPanel;

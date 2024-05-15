@@ -1,11 +1,11 @@
-package Exam5.CRUD;
+package CRUD;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import Exam5.Inventory.Inventory;
-import Exam5.Panel.ProductPanel;
-import Exam5.Product.Product;
+import Inventory.Inventory;
+import Panel.ProductPanel;
+import Product.Product;
 
 public class AddProduct implements ActionListener {
     private ProductPanel productPanel;
@@ -23,9 +23,9 @@ public class AddProduct implements ActionListener {
         double price = productPanel.getPriceField();
         int stock = productPanel.getStockField();
 
-        Product product = new Product(name, desc, price, stock);
-        inventoryManager.addProduct(product);
-        productPanel.getProductListPanel().addProduct(product); 
-        productPanel.clearFields();
+        Product newProduct = new Product(name, desc, price, stock);
+        inventoryManager.addProduct(newProduct); // Menambahkan produk baru ke InventoryManager
+        productPanel.getProductListPanel().addProduct(newProduct); // Menambahkan produk baru ke panel daftar produk
+        productPanel.clearFields(); // Menghapus nilai field setelah menambahkan produk baru
     }
 }

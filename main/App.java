@@ -1,12 +1,12 @@
-package Exam5.main;
+package main;
 
 import javax.swing.*;
 
-import Exam5.Inventory.Inventory;
-import Exam5.Panel.ProductPanel;
-import Exam5.Panel.ReportPanel;
-import Exam5.Panel.SearchPanel;
-import Exam5.Product.ProductList;
+import Inventory.Inventory;
+import Panel.ProductPanel;
+import Panel.ReportPanel;
+import Panel.SearchPanel;
+import Product.ProductList;
 
 import java.awt.*;
 

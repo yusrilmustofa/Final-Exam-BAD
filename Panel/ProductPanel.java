@@ -1,12 +1,12 @@
-package Exam5.Panel;
+package Panel;
 
 import javax.swing.*;
 
-import Exam5.CRUD.AddProduct;
-import Exam5.CRUD.DeleteProduct;
-import Exam5.CRUD.UpdateProduct;
-import Exam5.Inventory.Inventory;
-import Exam5.Product.ProductList;
+import CRUD.AddProduct;
+import CRUD.DeleteProduct;
+import CRUD.UpdateProduct;
+import Inventory.Inventory;
+import Product.ProductList;
 
 import java.awt.*;
 import java.text.NumberFormat;
@@ -61,23 +61,11 @@ public class ProductPanel extends JPanel {
     }
 
     public double getPriceField() {
-        double price = 0;
-        try {
-            price = Double.parseDouble(priceField.getText());
-        } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(this, "Harga tidak valid.");
-        }
-        return price;
+        return Double.parseDouble(priceField.getText());
     }
 
     public int getStockField() {
-        int stock = 0;
-        try {
-            stock = Integer.parseInt(stockField.getText());
-        } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(this, "Stok tidak valid.");
-        }
-        return stock;
+        return Integer.parseInt(stockField.getText());
     }
 
     public void clearFields() {
